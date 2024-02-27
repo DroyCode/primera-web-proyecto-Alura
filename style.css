@@ -52,6 +52,7 @@ nav a:hover {
     margin: 0 auto;
     padding: 50px;
 
+
 }
 
 .productos li {
@@ -64,6 +65,7 @@ nav a:hover {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 5%;
+
 }
 
 .productos li:hover {
@@ -293,175 +295,78 @@ th {
 }
 
 body {
-
-
     font-family: "Inter", sans-serif;
-
-
     font-optical-sizing: auto;
-
-
     font-weight: 300;
-
-
     font-style: normal;
-
-
-
     font-variation-settings: "slnt" 0;
 }
 
 header {
-
-
-
-
     background-color: #bbbbbb;
-
-
-
-
-
-
     padding: 20px 0;
 }
 
-
-
-
 .caja {
-
     width: 94%;
-    /* Adjusted for responsiveness */
-
     max-width: 940px;
-
     margin: 0 auto;
 }
 
-
-
-
-nav {
-
-    position: absolute;
-
-
-    top: 110px;
-
-    right: 5%;
-    /* Adjusted for responsiveness */
-}
-
-
-
-
-n nav li {
-
-    display: inline;
-
-    margin: 0 0 0 15px;
-}
-
-/* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-
     n nav {
-
-
         top: auto;
-
-
         right: auto;
-
         text-align: center;
     }
 
+    nav {
+        position: absolute;
+        top: 110px;
+        right: 5%;
 
+    }
+
+    n nav li {
+        display: inline;
+        margin: 0 0 0 15px;
+    }
+
+
+    nav li {
+        display: block;
+        margin: 0 0 10px;
+    }
+
+    .productos {
+        width: 94%;
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    .productos li {
+        width: 100%;
+        margin: 0 0 5%;
+    }
 }
 
-
-
-
-nav li {
-
-    display: block;
-
-    margin: 0 0 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* main section */
-.productos {
-
-    width: 94%;
-
-    max-width: 940px;
-
-    margin: 0 auto;
-
-    padding: 5%;
-}
-
-
-
-.productos li {
-
-    width: 100%;
-
-    margin: 0 0 5%;
-}
-
-
-
-
-/* Media query for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .productos li {
-
         width: 48%;
     }
 }
 
-
-
-
-
-
 .productos li,
 .productos li:hover,
 .productos li:active {
-
     border-radius: 0;
 }
 
-
-
-
-
-/* Media query for smaller screens */
 @media only screen and (max-width: 480px) {
-
-
     .productos h2 {
-
         font-size: 28px;
     }
 }
-
-
-
-/* Add more media queries for other sections as needed */
